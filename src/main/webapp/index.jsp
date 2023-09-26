@@ -13,5 +13,15 @@
         <input id="age" type="number" name="age">
         <input type="submit" value="Say hello">
     </form>
+<hr/>
+    <form method="post" action="tabulation">
+        <label for="start">Start:</label>
+        <input id="start" type="text" name="start">
+        <label for="end">End:</label>
+        <input id="end" type="text" name="end">
+        <label for="step">Step:</label>
+        <input id="step" type="text" name="step">
+        <input type="submit" value="Tab">
+    </form>
 </body>
 </html>

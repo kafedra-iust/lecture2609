@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <title>Табуляція</title>
+        <h:outputStylesheet library="css" name="styles.css"/>
+    </h:head>
+    <h:body>
+        <h1><h:outputText value="Max Y = #{tabBean.calculator.maxY}"/></h1>
+        <h1><h:outputText value="Min Y = #{tabBean.calculator.minY}"/></h1>
+        <h:dataTable value="#{tabBean.calculator.points}" var="p">
+            <h:column>
+                <f:facet name="header">X</f:facet>
+                <h:outputText value="#{p.x}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Y</f:facet>
+                <h:outputText value="#{p.y}"/>
+            </h:column>
+        </h:dataTable>
+    </h:body>
+</f:view>
+</html>

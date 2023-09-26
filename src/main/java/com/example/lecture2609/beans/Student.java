@@ -1,5 +1,6 @@
 package com.example.lecture2609.beans;
 
+import jakarta.inject.Named;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
