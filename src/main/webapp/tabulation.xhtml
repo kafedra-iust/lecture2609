@@ -16,11 +16,15 @@
         <h:dataTable value="#{tabBean.calculator.points}" var="p">
             <h:column>
                 <f:facet name="header">X</f:facet>
-                <h:outputText value="#{p.x}"/>
+                <h:outputText value="#{p.x}">
+                    <f:convertNumber pattern="#0.00" />
+                </h:outputText>
             </h:column>
             <h:column>
                 <f:facet name="header">Y</f:facet>
-                <h:outputText value="#{p.y}"/>
+                <h:outputText value="#{p.y}">
+                    <f:convertNumber pattern="#0.000000" />
+                </h:outputText>
             </h:column>
         </h:dataTable>
     </h:body>
